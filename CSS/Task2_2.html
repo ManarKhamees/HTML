@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2_2</title>
+    <style>
+        body {
+            height: 100vh; 
+            background-image: linear-gradient(to bottom left, #2fc0aa, #a6e4b9);
+            font-family: 'Arial', sans-serif;
+            margin: 0; 
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%; 
+        }
+
+        .login-box {
+            width: 600px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-title {
+            color: #148a80;
+            font-size: xx-large;
+            font-family: 'Verdana', sans-serif;
+            margin-bottom: 20px; 
+        }
+
+        .input-field {
+            margin: 10px;
+            padding: 10px;
+            width: 350px;
+            height: 40px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .password-visibility-toggle {
+            width: 350px; 
+            margin-bottom: 10px;
+        }
+
+        .password-visibility-toggle input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .password-visibility-toggle label {
+            color: black; 
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login-button {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            background-color: #148a80;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: medium;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #148a80;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .info-text {
+            margin: 2px;
+            font-size: 14px;
+        }
+
+        .password-visibility-toggle input[type="checkbox"]:checked ~ .input-field[type="password"] {
+            -webkit-text-security: none; 
+            text-security: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <p class="login-title">Login</p>
+            <form>
+                <input class="input-field" type="email" name="email" placeholder="Email"/>
+                <input class="input-field" type="password" name="password" placeholder="Password"/>
+                <div class="password-visibility-toggle">
+                    <input type="checkbox" id="Show_pass" />
+                    <label for="Show_pass">Show Password</label>
+                </div>
+                <input class="login-button" type="submit" value="Login" />
+            </form>
+            <p class="info-text">
+                Forgot <a href="">Username</a> / <a href="">Password</a>?
+            </p>
+            <p class="info-text">Don't have an account? <a href="">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>

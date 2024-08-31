@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2_3</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: #45c7ad;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Prevent scroll bar */
+      }
+
+      .page-container {
+        padding: 40px 0; /* Increased padding for more spacing from top and bottom */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .login-container {
+        height: 500px; /* Decreased height */
+        width: 560px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-title {
+        font-family: 'Georgia', serif;
+        font-weight: bold;
+        font-size: xx-large;
+        color: #333;
+      }
+
+      .input-field {
+        margin: 0px 10px 10px 10px;
+        padding: 5px;
+        width: 350px;
+        height: 40px;
+        border: 0;
+        border-bottom: 1px solid #000;
+      }
+
+      .input-field:focus {
+        outline: none !important;
+        border-bottom: 1px solid #45c7ad !important;
+      }
+
+      .show-password-container {
+        width: 370px;
+      }
+
+      .login-button {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 370px;
+        background-color: #1b978d;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: medium;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid gray;
+        cursor: pointer;
+      }
+
+      a {
+        color: #1b978d;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .info-text {
+        margin: 2px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      label {
+        width: 350px;
+        color: #45c7ad;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="login-container">
+        <p class="login-title">User Login</p>
+        <form action="">
+          <label for="email">Username</label>
+          <input
+            class="input-field"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Username"
+          />
+          <label for="password">Password</label>
+          <input
+            class="input-field"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <input class="login-button" type="submit" value="LOGIN" />
+        </form>
+        <p class="info-text">Forgot <a href="#">Password?</a></p>
+      </div>
+    </div>
+  </body>
+</html>
